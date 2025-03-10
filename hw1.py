@@ -24,6 +24,8 @@ list_of_nums = [int(num) for num in re.findall('\d+', st2)]
 for num in list_of_nums:
     print(num)
 
+print(', '.join(''.join(ch if ch.isdigit() else ' ' for ch in st2).split()))
+
 # #################################################################################
 # list comprehension
 #
